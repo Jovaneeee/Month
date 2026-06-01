@@ -1,53 +1,78 @@
 import {motion, AnimatePresence} from 'framer-motion'
 import { useEffect, useState } from 'react'
+import vandiel from './assets/vandiel.png'
+import abe from './assets/abe.png'
+import firstChat from './assets/1st-chat.png'
+import firstCall from './assets/1st-call.png'
+import firstChurch from './assets/1st-church.png'
+import firstDate from './assets/1st-date.png'
+import valentine from './assets/2.jpg'
+import jogging from './assets/1st-jogging.jpg'
+import lastBond from './assets/last-bond.png'
+import img1 from './assets/1.jpg'
+import img2 from './assets/3.jpg'
+import img3 from './assets/4.jpg'
+import img4 from './assets/5.jpg'
+import img5 from './assets/6.jpg'
+import img6 from './assets/7.jpg'
+import img7 from './assets/8.jpg'
+import img8 from './assets/9.jpg'
+import img9 from './assets/10.jpg'
+import img10 from './assets/11.jpg'
+import img11 from './assets/12.jpg'
+import img12 from './assets/13.jpg'
+import img13 from './assets/14.jpg'
+import img14 from './assets/15.jpg'
+import img15 from './assets/16.jpg'
+import img16 from './assets/17.jpg'
 
 export default function App() {
 
   const timelineData = [
     {
     title: "Vandiel Childhood Days",
-    image: "src/assets/vandiel.png",
+    image: vandiel,
     description: "A young boy full of dreams, curiosity, and endless possibilities. Spending his childhood creating memories, learning lessons, and growing into the person he is today."
   },
     {
     title: "Abegaile Childhood Days",
-    image: "src/assets/abe.png",
+    image: abe,
     description: "A cheerful little girl with a bright smile and a kind heart. Her childhood was filled with laughter, adventures, and moments that shaped the wonderful person she would become."
   },
   {
     title: "Where It All Began",
-    image: "src/assets/1st-chat.png",
+    image: firstChat,
     description: "The beginning of our journey together was marked by a simple conversation that sparked something special. It was the start of a beautiful friendship that would evolve into a deep and meaningful relationship."
   },
   {
     title: "Calling Each Other",
-    image: "src/assets/1st-call.png",
+    image: firstCall,
     description: "Our first phone call was filled with excitement and nervous energy. We talked for hours, sharing stories and getting to know each other on a deeper level. It was the beginning of our connection that would only grow stronger with time."
   },
   {
     title: "First Church Together",
-    image: "src/assets/1st-church.png",
+    image: firstChurch,
     description: "Our first church together was a meaningful experience that brought us closer. We worshipped side by side, feeling the presence of God and the strength of our bond."
   },
   {
     title: "First Date",
-    image: "src/assets/1st-date.png",
+    image: firstDate,
     description: "Our first date was a delightful experience filled with laughter and conversation. We explored the city together, getting to know each other in a relaxed and enjoyable setting."
   },
   {
     title: "Valentine's Day",
-    image: "src/assets/2.jpg",
+    image: valentine,
     description: "Valentine's Day was a special occasion that brought us closer together. We celebrated our love with a romantic dinner and thoughtful gifts, making it a memory we will cherish forever."
   },
   {
     title: "Jogging Session",
-        image: "src/assets/1st-jogging.jpg",
+        image: jogging,
         description: "Our jogging sessions were a great way to stay fit and spend quality time together. We would explore different trails and enjoy the outdoors while supporting each other's fitness goals."
   },
 
   {
    title: "Last Bonding",
-        image: "src/assets/last-bond.png",
+        image: lastBond,
         description: "Our last bonding session was a cherished moment that brought us closer together. We reflected on our journey and the memories we had created, feeling grateful for the time we had shared."
 
   },
@@ -56,22 +81,22 @@ export default function App() {
 
 
    const images = [
-    "src/assets/1.jpg",
-    "src/assets/3.jpg",
-    "src/assets/4.jpg",
-    "src/assets/5.jpg",
-     "src/assets/6.jpg",
-    "src/assets/7.jpg",
-    "src/assets/8.jpg",
-    "src/assets/9.jpg",
-    "src/assets/10.jpg",
-     "src/assets/11.jpg",
-    "src/assets/12.jpg",
-    "src/assets/13.jpg",
-    "src/assets/14.jpg",
-    "src/assets/15.jpg",
-    "src/assets/16.jpg",
-    "src/assets/17.jpg",
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8,
+    img9,
+    img10,
+    img11,
+    img12,
+    img13,
+    img14,
+    img15,
+    img16
   ]
 
   const [index, setIndex] = useState(0)
@@ -106,7 +131,7 @@ export default function App() {
 
       {/* BACKGROUND IMAGE */}
       <img
-        src="src/assets/2.jpg"
+        src={valentine}
         alt="background"
         className="
         absolute
